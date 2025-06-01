@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "n8n Webhook",
+  "name_for_model": "n8n_webhook",
+  "description_for_human": "Управляй задачами и событиями через n8n",
+  "description_for_model": "Позволяет создавать задачи, события и автоматизации через n8n webhook.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://pavelscerbakov.github.io/n8n-chatgpt-plugin/openapi.yaml"
+  },
+  "logo_url": "https://pavelscerbakov.github.io/n8n-chatgpt-plugin/logo.png",
+  "contact_email": "your@email.com",
+  "legal_info_url": "https://pavelscerbakov.github.io/n8n-chatgpt-plugin/legal.html"
+}
