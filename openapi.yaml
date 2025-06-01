@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: n8n Webhook Plugin
+  version: "1.0"
+servers:
+  - url: https://pscerbakov.app.n8n.cloud
+paths:
+  /webhook/a356da53-2cb9-479b-928b-0f3f021ba06d:
+    post:
+      summary: Отправить задачу в n8n
+      operationId: sendTask
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: Задача или команда для агента n8n
+      responses:
+        '200':
+          description: Успешно
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
